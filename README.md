@@ -1,8 +1,8 @@
 # Ionic-5-Angular-8-Cordova-9-PWA-on-Fedora-30-on-Mac-27
 Getting a PWA to work on desktop did not work out-of-the box for my situation. This is how I got it to work! Good luck with your project!
 
-/*
-CONVERT MOBILE APP TO PWA DESKTOP APP
+
+# CONVERT MOBILE APP TO PWA DESKTOP APP
 
 Ionic 5 Angular 8 Cordova 9 PWA on Fedora 30 on Mac 27
 
@@ -50,12 +50,24 @@ Add this extension to disable CORS permissions so we can connect to the api:
 https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc
 
 Run these commands from app:
+
 $ npm uninstall -g @angular/cli
+
 $ npm install -g @angular/cli
+
 $ ng -v
+
 $ ng add @angular/pwa --project app
+
 $ ionic cordova platform add browser
+
 $ ionic cordova run browser
+
+$ cordova plugin add cordova-plugin-browsersync
+
+Get this error? "Using "requireCordovaModule" to load non-cordova module "q" is not supported. Instead, add this module to your dependencies and use regular "require" to load it."
+
+
 
 When browser pops open, copy url and move to chromium browser, turn on CORS disabling at upper right of window.
 
@@ -68,4 +80,3 @@ Note: If errors arise, copy them, search the internet for solutions and apply!
 Take breaks every 25 minutes or suffer!
 
 LONG LIVE LINUX----YOU MAKE LIFE FUN AGAIN----YOU NEVER TELL ME WHAT TO DO!
-*/
